@@ -1,0 +1,59 @@
+body {
+  padding: 5px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+h1 {
+	font-size: 4em;
+	text-align: center;
+	margin: 2px;
+}
+
+.logo-links {
+	float: right;
+	padding: 3px;
+}
+
+.home-img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+}
+
+.font-0 {
+	font-family: 'Abril Fatface', cursive;
+	font-size: 3.5em;
+}
+
+.font-1 {
+	font-family: 'Stalemate', cursive;
+	font-size: 4.5em;
+}
+
+.font-2 {
+	font-family: 'Sacramento', cursive;
+}
+
+.font-3 {
+	font-family: 'Jacques Francois Shadow', cursive;
+	font-size: 3em;
+}
+
+.font-4 {
+	font-family: 'Qwigley', cursive;
+	font-size: 4.5em;
+}
+
+.font-5 {
+	font-family: 'Sail', cursive;
+}
+
+.font-6 {
+	font-family: 'Clicker Script', cursive;
+}
+
