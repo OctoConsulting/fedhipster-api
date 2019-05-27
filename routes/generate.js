@@ -178,12 +178,15 @@ router.post('/', function(req, res, next) {
 
 		console.log('response start');
 
+		let url = req.protocol + '://' + req.get('host') +'/api/files/'+ folderName +'/'+ appName +'.zip';
+		console.log('url : '+ url);
+
 		let resJSON = {
 			'status': 200,
 			'success': true,
 			'folder': folderName,
 			'app': appName,
-			'url': 'http://localhost:3000/api/files/'+ folderName +'/'+ appName +'.zip',
+			'url': url,
 			'config': config
 		};
 
