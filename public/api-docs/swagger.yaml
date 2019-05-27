@@ -7,14 +7,13 @@ info:
   license:
     name: "Apache 2.0"
     url: "http://www.apache.org/licenses/LICENSE-2.0.html"
-host: "localhost:3000"
 basePath: "/"
 tags:
 - name: "api"
   description: "FedHipster API"
   externalDocs:
     description: "Find out more"
-    url: "http://fedhipster.com"
+    url: "http://www.fedhipster.com"
 schemes:
 - "https"
 - "http"
@@ -23,8 +22,8 @@ paths:
     post:
       tags:
         - "api"
-      summary: "Generate a new application"
-      description: ""
+      summary: "Generate application"
+      description: "Generates a new application from posted config"
       consumes:
       - "application/json"
       produces:
@@ -44,22 +43,21 @@ paths:
       tags:
       - "api"
       summary: "Get file by ID"
-      description: "Returns a file"
+      description: "Returns a generated zip file"
       produces:
-      - "application/json"
+      - "application/octet-stream"
+      - "application/zip"
       parameters:
       - name: "folderId"
         in: "path"
         description: "ID of folder to return"
         required: true
-        type: "integer"
-        format: "int64"
+        type: "string"
       - name: "fileId"
         in: "path"
         description: "ID of file to return"
         required: true
-        type: "integer"
-        format: "int64"
+        type: "string"
       responses:
         200:
           description: "successful operation"
