@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "start": "node ./bin/www",
-    "heroku-prebuild": "echo This runs before Heroku installs your dependencies && npm install jhipster -g",
+    "preinstall": "npm install -g generator-jhipster"
   },
   "dependencies": {
     "archiver": "^3.0.0",
