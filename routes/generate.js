@@ -79,7 +79,7 @@ router.post('/', function(req, res, next) {
 	    });
 
 	    child.stderr.on('data', function (data) {
-	        console.log('stderr: ' + data.toString());
+	        //console.log('stderr: ' + data.toString());
 	    });
 
 	    child.on('exit', function (code) {
