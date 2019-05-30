@@ -89,6 +89,14 @@
       "resolved": "https://registry.npmjs.org/array-uniq/-/array-uniq-1.0.3.tgz",
       "integrity": "sha1-r2rId6Jcx/dOBYiUdThY39sk/bY="
     },
+    "asn1": {
+      "version": "0.2.4",
+      "resolved": "https://registry.npmjs.org/asn1/-/asn1-0.2.4.tgz",
+      "integrity": "sha512-jxwzQpLQjSmWXgwaCZE9Nz+glAG01yF1QnWgbhGwHI5A6FRIEY6IVqtHhIepHqI7/kyEyQEagBC5mBEFlIYvdg==",
+      "requires": {
+        "safer-buffer": "~2.1.0"
+      }
+    },
     "async": {
       "version": "2.6.2",
       "resolved": "https://registry.npmjs.org/async/-/async-2.6.2.tgz",
@@ -129,6 +137,14 @@
       "integrity": "sha512-NF+epuEdnUYVlGuhaxbbq+dvJttwLnGY+YixlXlME5KpQ5W3CnXA5cVTneY3SPbPDRkcjMbifrwmFYcClgOZeg==",
       "requires": {
         "safe-buffer": "5.1.2"
+      }
+    },
+    "bcrypt-pbkdf": {
+      "version": "1.0.2",
+      "resolved": "https://registry.npmjs.org/bcrypt-pbkdf/-/bcrypt-pbkdf-1.0.2.tgz",
+      "integrity": "sha1-pDAdOJtqQ/m2f/PKEaP2Y342Dp4=",
+      "requires": {
+        "tweetnacl": "^0.14.3"
       }
     },
     "bl": {
@@ -858,10 +874,33 @@
       "resolved": "https://registry.npmjs.org/setprototypeof/-/setprototypeof-1.1.0.tgz",
       "integrity": "sha512-BvE/TwpZX4FXExxOxZyRGQQv651MSwmWKZGqvmPcRIjDqWub67kTKuIMx43cZZrS/cBBzwBcNDWoFxt2XEFIpQ=="
     },
+    "ssh2": {
+      "version": "0.8.4",
+      "resolved": "https://registry.npmjs.org/ssh2/-/ssh2-0.8.4.tgz",
+      "integrity": "sha512-qztb9t4b34wJSiWVpeTMVVN/5KCuBoyctBc2BcSe/Uq4NRnF0gB16Iu5p72ILhdYATcMNwB5WppzPIEs/3wB8Q==",
+      "requires": {
+        "ssh2-streams": "~0.4.4"
+      }
+    },
+    "ssh2-streams": {
+      "version": "0.4.4",
+      "resolved": "https://registry.npmjs.org/ssh2-streams/-/ssh2-streams-0.4.4.tgz",
+      "integrity": "sha512-yNfPZgJO/N69TvYkpDHZBkXAXQzTpfzRkOphQu3PeUpZnrjp9VNa8RKDZkZDpjsWItay+I4NMAbZZ7DqHRt0AQ==",
+      "requires": {
+        "asn1": "~0.2.0",
+        "bcrypt-pbkdf": "^1.0.2",
+        "streamsearch": "~0.1.2"
+      }
+    },
     "statuses": {
       "version": "1.4.0",
       "resolved": "https://registry.npmjs.org/statuses/-/statuses-1.4.0.tgz",
       "integrity": "sha512-zhSCtt8v2NDrRlPQpCNtw/heZLtfUDqxBM1udqikb/Hbk52LK4nQSwr10u77iopCW5LsyHpuXS0GnEc48mLeew=="
+    },
+    "streamsearch": {
+      "version": "0.1.2",
+      "resolved": "https://registry.npmjs.org/streamsearch/-/streamsearch-0.1.2.tgz",
+      "integrity": "sha1-gIudDlb8Jz2Am6VzOOkpkZoanxo="
     },
     "string_decoder": {
       "version": "1.1.1",
@@ -889,6 +928,11 @@
       "version": "1.1.1",
       "resolved": "https://registry.npmjs.org/to-buffer/-/to-buffer-1.1.1.tgz",
       "integrity": "sha512-lx9B5iv7msuFYE3dytT+KE5tap+rNYw+K4jVkb9R/asAb+pbBSM17jtunHplhBe6RRJdZx3Pn2Jph24O32mOVg=="
+    },
+    "tweetnacl": {
+      "version": "0.14.5",
+      "resolved": "https://registry.npmjs.org/tweetnacl/-/tweetnacl-0.14.5.tgz",
+      "integrity": "sha1-WuaBd/GS1EViadEIr6k/+HQ/T2Q="
     },
     "type-is": {
       "version": "1.6.18",
